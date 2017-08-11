@@ -58,7 +58,6 @@
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>
-  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.5\Microsoft.FSharp.Targets" Condition="Exists('$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.5\Microsoft.FSharp.Targets')" />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '11.0'">
@@ -124,11 +123,6 @@
       <AssemblyName>System.Windows.Forms.dll</AssemblyName>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <ProjectReference Include="..\..\LostLib\Lost.FSharp\Lost.FSharp.fsproj">
-      <Name>Lost.FSharp</Name>
-      <Project>{5fda54e6-3f01-43a9-b4d9-5a1f61bb557f}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 	     Other similar extension points exist, see Microsoft.Common.targets.

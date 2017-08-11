@@ -626,7 +626,7 @@ type JIT() as this =
 
             translate stack nstack instr
             
-        and translate stack nstack (instr: Cil.Instruction) =
+        and translate stack (nstack: Value list) (instr: Cil.Instruction) =
             let translator() =
                 {   new IInstructionTranslator with
                         member this.Translate context state instruction =
@@ -1863,7 +1863,7 @@ type JIT() as this =
                         Method = hlmethod   }
                 let translationState =
                     {   Stack = stack
-                        NativeStack = nstack
+                        NativeStack = (nstack: Value list)
                         Errors = []
                         Verifiable = true  }
                 match translators |> List.tryPick (fun t -> t.Translate translationContext translationState instr) with

@@ -58,6 +58,12 @@
     <Compile Include="JIT.fs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="LLVM">
+      <HintPath>..\packages\LLVM.0.1.0\lib\LLVM.dll</HintPath>
+    </Reference>
+    <Reference Include="Lost.FSharp">
+      <HintPath>..\packages\Lost.FSharp.1.2.1\lib\net40\Lost.FSharp.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>..\packages\Mono.Cecil.0.9.5.4\lib\net40\Mono.Cecil.dll</HintPath>
     </Reference>
@@ -84,16 +90,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\LLVM\LLVM.NET\LLVM\LLVM.csproj">
-      <Name>LLVM (LLVM\LLVM)</Name>
-      <Project>{218e291b-4ee7-4526-b4f6-ef72fde40e90}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\LostLib\Lost.FSharp\Lost.FSharp.fsproj">
-      <Name>Lost.FSharp</Name>
-      <Project>{5fda54e6-3f01-43a9-b4d9-5a1f61bb557f}</Project>
-      <Private>True</Private>
-    </ProjectReference>
     <ProjectReference Include="..\CodeBlock.Core\CodeBlock.Core.fsproj">
       <Name>CodeBlock.Core</Name>
       <Project>{2c47eef7-a57e-48da-b445-8ca66652c0c5}</Project>

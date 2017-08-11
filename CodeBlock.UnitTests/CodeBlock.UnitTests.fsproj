@@ -8,10 +8,10 @@
     <OutputType>Library</OutputType>
     <RootNamespace>CodeBlock.UnitTests</RootNamespace>
     <AssemblyName>CodeBlock.UnitTests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <Name>FShapUnitTest</Name>
     <TargetFrameworkProfile />
-    <TargetFSharpCoreVersion>4.3.0.0</TargetFSharpCoreVersion>
+    <TargetFSharpCoreVersion>4.4.1.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -59,31 +59,34 @@
       <SubType>Test</SubType>
     </Compile>
     <Compile Include="GenericsTests.fs" />
+    <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CodeBlock.LLVM\CodeBlock.LLVM.fsproj">
+      <Name>CodeBlock.LLVM</Name>
+      <Project>{b27dfe2c-a73b-4ffa-ba6d-915bd3bd89cb}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Private>True</Private>
+    </Reference>
+    <Reference Include="LLVM">
+      <HintPath>..\packages\LLVM.0.1.0\lib\LLVM.dll</HintPath>
+    </Reference>
+    <Reference Include="LLVM.NativeLibrary">
+      <HintPath>..\packages\LLVM.NativeLibrary.0.1.0.1\lib\LLVM.NativeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Lost.FSharp">
+      <HintPath>..\packages\Lost.FSharp.1.2.1\lib\net40\Lost.FSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Lost.Native">
+      <HintPath>..\packages\Lost.Native.0.0.4\lib\Lost.Native.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
-    <ProjectReference Include="..\..\LLVM\LLVM.NET\LLVM.NativeLibrary\LLVM.NativeLibrary.csproj">
-      <Name>LLVM.NativeLibrary</Name>
-      <Project>{6bb50a0f-7ac3-4dfc-bbdc-9f57a65d243f}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\LLVM\LLVM.NET\LLVM\LLVM.csproj">
-      <Name>LLVM</Name>
-      <Project>{218e291b-4ee7-4526-b4f6-ef72fde40e90}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\LostLib\Lost.FSharp\Lost.FSharp.fsproj">
-      <Name>Lost.FSharp</Name>
-      <Project>{5fda54e6-3f01-43a9-b4d9-5a1f61bb557f}</Project>
-      <Private>True</Private>
-    </ProjectReference>
     <ProjectReference Include="..\CodeBlock.Core\CodeBlock.Core.fsproj">
       <Name>CodeBlock.Core</Name>
       <Project>{2c47eef7-a57e-48da-b445-8ca66652c0c5}</Project>
