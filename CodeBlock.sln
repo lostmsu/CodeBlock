@@ -49,6 +49,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LLVM", "LLVM", "{AF16D61A-E
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CodeBlock.Core", "CodeBlock.Core\CodeBlock.Core.fsproj", "{2C47EEF7-A57E-48DA-B445-8CA66652C0C5}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CodeBlock.LLVM", "CodeBlock.LLVM\CodeBlock.LLVM.fsproj", "{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -169,6 +171,18 @@ Global
 		{2C47EEF7-A57E-48DA-B445-8CA66652C0C5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2C47EEF7-A57E-48DA-B445-8CA66652C0C5}.Release|Win32.ActiveCfg = Release|Any CPU
 		{2C47EEF7-A57E-48DA-B445-8CA66652C0C5}.Release|x64.ActiveCfg = Release|Any CPU
+		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Debug|Win32.Build.0 = Debug|Any CPU
+		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Debug|x64.Build.0 = Debug|Any CPU
+		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Release|Win32.ActiveCfg = Release|Any CPU
+		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Release|Win32.Build.0 = Release|Any CPU
+		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Release|x64.ActiveCfg = Release|Any CPU
+		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

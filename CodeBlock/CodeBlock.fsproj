@@ -77,11 +77,8 @@
     <Compile Include="RuntimeUtils.fs" />
     <Compile Include="TypeSystem.fs" />
     <Compile Include="ObjectModel.fs" />
-    <Compile Include="GC.fs" />
     <Compile Include="ManagedArray.fs" />
     <Compile Include="Instructions.fs" />
-    <Compile Include="InstructionBuilder.fs" />
-    <Compile Include="JIT.fs" />
     <Compile Include="DelegateTypes.fs" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -127,11 +124,6 @@
       <AssemblyName>System.Windows.Forms.dll</AssemblyName>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <ProjectReference Include="..\..\LLVM\LLVM.NET\LLVM\LLVM.csproj">
-      <Name>LLVM</Name>
-      <Project>{218e291b-4ee7-4526-b4f6-ef72fde40e90}</Project>
-      <Private>True</Private>
-    </ProjectReference>
     <ProjectReference Include="..\..\LostLib\Lost.FSharp\Lost.FSharp.fsproj">
       <Name>Lost.FSharp</Name>
       <Project>{5fda54e6-3f01-43a9-b4d9-5a1f61bb557f}</Project>
