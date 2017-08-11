@@ -60,6 +60,7 @@
     </Compile>
     <Compile Include="GenericsTests.fs" />
     <Content Include="packages.config" />
+    <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CodeBlock.LLVM\CodeBlock.LLVM.fsproj">
