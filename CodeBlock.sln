@@ -30,6 +30,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CodeBlock.Core", "CodeBlock
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CodeBlock.LLVM", "CodeBlock.LLVM\CodeBlock.LLVM.fsproj", "{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SPIR-V", "SPIR-V\SPIR-V.fsproj", "{6CD3BB4B-F15A-48E0-AABD-81C3DE9B856B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -116,6 +118,18 @@ Global
 		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Release|Win32.Build.0 = Release|Any CPU
 		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Release|x64.ActiveCfg = Release|Any CPU
 		{B27DFE2C-A73B-4FFA-BA6D-915BD3BD89CB}.Release|x64.Build.0 = Release|Any CPU
+		{6CD3BB4B-F15A-48E0-AABD-81C3DE9B856B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD3BB4B-F15A-48E0-AABD-81C3DE9B856B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD3BB4B-F15A-48E0-AABD-81C3DE9B856B}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{6CD3BB4B-F15A-48E0-AABD-81C3DE9B856B}.Debug|Win32.Build.0 = Debug|Any CPU
+		{6CD3BB4B-F15A-48E0-AABD-81C3DE9B856B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6CD3BB4B-F15A-48E0-AABD-81C3DE9B856B}.Debug|x64.Build.0 = Debug|Any CPU
+		{6CD3BB4B-F15A-48E0-AABD-81C3DE9B856B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD3BB4B-F15A-48E0-AABD-81C3DE9B856B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD3BB4B-F15A-48E0-AABD-81C3DE9B856B}.Release|Win32.ActiveCfg = Release|Any CPU
+		{6CD3BB4B-F15A-48E0-AABD-81C3DE9B856B}.Release|Win32.Build.0 = Release|Any CPU
+		{6CD3BB4B-F15A-48E0-AABD-81C3DE9B856B}.Release|x64.ActiveCfg = Release|Any CPU
+		{6CD3BB4B-F15A-48E0-AABD-81C3DE9B856B}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
