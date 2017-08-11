@@ -1,0 +1,16 @@
+syntax: glob
+
+Backup/*
+bin/*
+packages/*
+obj/*
+*.user
+*.suo
+_UpgradeReport_Files/*
+_ReSharper.Research/*
+*.ncrunchsolution
+TestResults/*
+_NCrunch_Research/*
+UpgradeLog.htm
+CodeBlock.sdf
+CodeBlock.opensdf
